@@ -1,4 +1,4 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY, isSupabaseConfigured } from "/shared/supabase-config.js";
+import { SUPABASE_URL, SUPABASE_ANON_KEY, isSupabaseConfigured } from "supabase-config.js";
 
 const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const money = new Intl.NumberFormat("fr-DZ", { style: "currency", currency: "DZD" });
