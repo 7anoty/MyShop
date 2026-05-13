@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MyShop | متجر الزبون</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/shared/styles.css" />
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="/client/" aria-label="MyShop">
-        <span class="mark">7</span>
-        <span>7anoty</span>
+        <span class="mark">IZ</span>
+        <span>IssamShop</span>
       </a>
       <nav class="nav" aria-label="Client navigation">
         <button data-scroll="home">الرئيسية</button>
@@ -38,7 +38,7 @@
           <div>
             <span class="kicker">المنتجات</span>
             <h2>كل منتج بسعره النهائي وتخفيضه</h2>
-            <p class="muted">اختر الولاية لظهور سعر التوصيل، ثم اضغط شراء لملء بياناتك داخل نفس البطاقة.</p>
+            <p class="muted">اضغط على المنتج لفتح صفحة تفاصيله، ثم اختر ولايتك وأرسل الطلب.</p>
           </div>
           <div class="filters">
             <input class="input" id="searchInput" placeholder="بحث عن منتج" />
@@ -50,11 +50,13 @@
         <div class="grid" id="productsGrid"></div>
       </section>
 
+      <section class="section hidden" id="productDetail"></section>
+
       
     </main>
 
     <div class="toast hidden" id="toast"></div>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script type="module" src="app.js"></script>
+    <script type="module" src="/client/app.js"></script>
   </body>
 </html>
